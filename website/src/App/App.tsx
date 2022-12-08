@@ -28,10 +28,22 @@ const darkTheme = createTheme({
   type: 'dark',
   theme: {
     colors: {
-      background: '#444444',
-      foreground: '#E6E8EB'
+      primaryLight: '#2B2F31',
+      primaryLightHover: '#313538',
+      primaryLightActive: '#3A3F42',
+      primaryLightContrast: '#697177',
+      primary: '#697177',
+      primaryBorder: '#4C5155',
+      primaryBorderHover: '#697177',
+      primarySolidHover: '#787F85',
+      primarySolidContrast: '#ffffff',
+      background: '#2B2F31',
+      selection: '#9BA1A6'
+    },
+    fonts: {
+      
     }
-  }
+  },
 })
 
 // color palette: https://www.canva.com/colors/color-palettes/dark-road-curve/

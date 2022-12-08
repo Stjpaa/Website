@@ -4,7 +4,7 @@ import * as React from 'react';
 export const Home = () => {
     return (
         <div>
-            <Spacer y={3} />
+            <Spacer y={2} />
 
             <Grid.Container justify='center'>
                 <Grid>
@@ -12,7 +12,7 @@ export const Home = () => {
                 </Grid>
             </Grid.Container>
 
-            <Spacer y={1} />
+            <Spacer y={0.5} />
 
             <Grid.Container justify='center'>
                 <Grid>
@@ -20,7 +20,7 @@ export const Home = () => {
                 </Grid>
             </Grid.Container>
 
-            <Spacer y={1} />
+            <Spacer y={0.5} />
 
             <Grid.Container justify='center'>
                 <Grid>
@@ -29,7 +29,7 @@ export const Home = () => {
             </Grid.Container>
             <Grid.Container justify='center'>
                 <Grid>
-                    <Text h4>Game Development Student</Text>
+                    <Text h4 weight={'normal'}>Game Development Student</Text>
                 </Grid>
             </Grid.Container>
 
@@ -41,21 +41,22 @@ export const Home = () => {
                 </Grid>
             </Grid.Container>
 
-            <Spacer y={1} />
+            <Spacer y={0.5} />
 
+            {/* Wrap Link around the Grids? */}
             <Grid.Container justify='center'>
                 <Grid>
-                    <Text h3>Text 1</Text>
+                    <Text h3 weight={"normal"}>Text 1</Text>
                     <Image src="https://via.placeholder.com/200" />
                 </Grid>
                 <Spacer x={5} />
                 <Grid>
-                    <Text h3>Text 2</Text>
+                    <Text h3 weight={"normal"}>Text 2</Text>
                     <Image src='https://via.placeholder.com/200' />
                 </Grid>
                 <Spacer x={5} />
                 <Grid>
-                    <Text h3>Text 3</Text>
+                    <Text h3 weight={"normal"}>Text 3</Text>
                     <Image src='https://via.placeholder.com/200' />
                 </Grid>
             </Grid.Container>
