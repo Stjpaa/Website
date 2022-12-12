@@ -1,5 +1,4 @@
 import { Avatar, Grid, Spacer, Text, Image } from '@nextui-org/react';
-import * as React from 'react';
 
 export const Home = () => {
     return (

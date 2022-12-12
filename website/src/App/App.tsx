@@ -1,10 +1,11 @@
-import * as React from 'react';
 import { NextUIProvider, createTheme } from '@nextui-org/react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Navigationbar } from '../Components/Navigationbar';
 import { Home } from '../Pages/Home';
 import { About } from '../Pages/About';
 import { Projects } from '../Pages/Projects';
+import { Games } from '../Pages/Games';
+import { Software } from '../Pages/Software';
 
 export const App = () => {
 
@@ -13,11 +14,12 @@ export const App = () => {
       <Navigationbar />
       <BrowserRouter>
         <Routes>
-          {/* <Route path='/' element={<Home />} /> */}
           <Route index element={<Home />} />
-          <Route path="Home" element={<Home />} />
-          <Route path="About" element={<About />} />
-          <Route path="Projects" element={<Projects />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<div> <Projects /> <Games /> </div>} />
+          <Route path="/projects/games" element={<div> <Projects /> <Games /> </div>} />
+          <Route path="/projects/software" element={<div> <Projects /> <Software /> </div>} />
         </Routes>
       </BrowserRouter>
     </NextUIProvider>  
